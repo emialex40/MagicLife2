@@ -3,19 +3,111 @@
 }; %>
 
 <%= _.template(require('./../includes/header.html').default)(data) %>
+<!-- section system beginning -->
 <section class="system">
   <div class="container row just-between">
     <div class="system__left">
       <div class="system__img">
-        <img src="img/women1.png" alt="Система обучения Magic-Lige" class="img-responsive">
+        <img class="img-responsive" src="img/women1.png" alt="Система обучения Magic-Lige" class="img-responsive">
       </div>
     </div>
     <div class="system__right">
       <h3 class="system__header">Система обучения Magic Life</h3>
       <div class="system__circle-block">
-
+        <img class="img-responsive" src="img/money_full.png" alt="Система обучения Magic Life">
       </div>
     </div>
   </div>
 </section>
+<!-- section system end -->
+<!-- section skills beginning -->
+<section class="skills">
+  <div class="container row just-between">
+    <div class="skills__left">
+      <h3 class="skills__header">Пройди все уровни и прокачай навыки:</h3>
+      <ul class="skills__items">
+        <li class="skills__item skills__item1">Создания вовлекающего<br> фото и видео контента</li>
+        <li class="skills__item skills__item2">Продвижения и рекламы<br> любого бизнеса</li>
+        <li class="skills__item skills__item3">Написания продающих<br> текстов</li>
+        <li class="skills__item skills__item4">Продвижения и рекламы<br> любого бизнеса</li>
+      </ul>
+    </div>
+    <div class="skills__right">
+      <div class="skills__pers">
+        <img class="img-responsive" src="img/men1.png" alt="Пройди все уровни и прокачай навыки:">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- sections skills end -->
+<!-- section rules beginning -->
+<section class="rules">
+  <div class="container">
+    <h3 class="rules__header">Твой бизнес, твоя игра, твои правила</h3>
+    <div class="rules__wrapper">
+      <div class="rules__img-block">
+        <img src="img/men2.png" alt="Твой бизнес, твоя игра, твои правила">
+      </div>
+      <div class="rules__items">
+        <div class="rules__item rules__item1">Управляй бизнесом из любой<br> точки мира</div>
+        <div class="rules__item rules__item2">Реализуй свои планы о<br> которых мечтал</div>
+        <div class="rules__item rules__item3">Получай достаточно денег на<br> все что ты хочешь</div>
+        <div class="rules__item rules__item4">Получи полную свободу действий<br> вместе с Magic Life</div>
+      </div>
+      <div class="rules__btn-block">
+        <a class="rules__btn js-btn" href="#">Начать игру</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- section rules end -->
+<!-- section get beginning -->
+<section class="get">
+  <div class="container">
+    <div class="get__wrapper row just-between">
+      <div class="get__left">
+        <div class="get__img-block">
+          <img src="img/women2.png" alt="Что ты получишь играя в Magic Life?">
+        </div>
+      </div>
+      <div class="get__right">
+        <h3 class="get__header">Что ты получишь играя в Magic Life?</h3>
+        <ul class="get__items">
+          <li class="get__item get__item1">
+            <h5 class="get__item-title">Бизнес</h5>
+            <span class="get__item-txt">Создавай бизнес на платформе<br>
+              крупной международной компании,<br>
+              без вложений и рисков</span>
+          </li>
+          <li class="get__item get__item2">
+            <h5 class="get__item-title">Помощь</h5>
+            <span class="get__item-txt">
+              Команда Magic Life всегда<br>
+              поддержит и поможет тебе на пути<br>
+              развития бизнес-навыков.
+            </span>
+          </li>
+          <li class="get__item get__item3">
+            <h5 class="get__item-title">Обучение</h5>
+            <span class="get__item-txt">
+              Проходи онлайн обучение в таких<br>
+              направлениях как: продвижение в<br>
+              социальных сетях, копирайтинг,<br>
+              создание увлекательного контента,<br>
+              создание личного бренда.
+            </span>
+          </li>
+          <li class="get__item get__item4">
+            <h5 class="get__item-title">Свобода</h5>
+            <span class="get__item-txt">
+              Путешествуй и зарабатывай из<br>
+              любой точки мира.
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- section get end -->
 <%= _.template(require('./../includes/footer.html').default)(data) %>

@@ -1,0 +1,160 @@
+.rules
+  background: url(../img/bg4.png) no-repeat center center
+  background-size: cover
+  z-index: 3
+  margin-top: -227px
+  padding-top: 227px
+  box-sizing: border-box
+  &:after
+    content: ""
+    width: 169px
+    height: 111px
+    background: url(../img/plane.png) no-repeat
+    position: absolute
+    bottom: -85px
+    right: 28%
+  &__header
+    font-family: $copiright
+    font-size: 48px
+    font-weight: 400
+    color: $white
+    text-align: center
+  &__wrapper
+    position: relative
+    width: 100%
+    margin-top: 60px
+    padding-bottom: 115px
+  &__img-block
+    display: inline-block
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+  &__items
+    position: absolute
+    width: 100%
+    left: 0
+    right: 0
+    top: 117px
+  &__item
+    position: absolute
+    display: inline-block
+    font-family: $coco
+    font-size: 19px
+    font-weight: 400
+    color: $white
+  &__item1
+    top: 0
+    left: 0
+    padding-left: 80px
+    &:before
+      content: ""
+      width: 110px
+      height: 122px
+      background: url(../img/icon_rules1.png)
+      position: absolute
+      top: -38px
+      left: 0
+    &:after
+      content: ""
+      width: 315px
+      height: 14px
+      background: url(../img/icon_rules1_stroke.png) no-repeat
+      position: absolute
+      bottom: -33px
+      left: 30px
+  &__item2
+    top: 0
+    right: 0
+    padding-right: 74px
+    &:before
+      content: ""
+      width: 110px
+      height: 122px
+      background: url(../img/icon_rules3.png)
+      position: absolute
+      top: -38px
+      right: 0
+    &:after
+      content: ""
+      width: 315px
+      height: 14px
+      background: url(../img/icon_rules3_stroke.png) no-repeat
+      position: absolute
+      bottom: -33px
+      right: 30px
+  &__item3
+    top: 135px
+    left: 0
+    padding-left: 80px
+    &:before
+      content: ""
+      width: 110px
+      height: 122px
+      background: url(../img/icon_rules2.png)
+      position: absolute
+      top: -38px
+      left: 0
+    &:after
+      content: ""
+      width: 315px
+      height: 14px
+      background: url(../img/icon_rules2_stroke.png) no-repeat
+      position: absolute
+      bottom: -33px
+      left: 30px
+  &__item4
+    top: 135px
+    right: 0
+    padding-right: 74px
+    &:before
+      content: ""
+      width: 110px
+      height: 122px
+      background: url(../img/icon_rules4.png)
+      position: absolute
+      top: -38px
+      right: 0
+    &:after
+      content: ""
+      width: 315px
+      height: 14px
+      background: url(../img/icon_rules4_stroke.png) no-repeat
+      position: absolute
+      bottom: -33px
+      right: 30px
+  &__btn-block
+    width: 100%
+  &__btn
+    display: inline-block
+    width: 327px
+    height: 83px
+    background: url(../img/header_btn.png) no-repeat
+    text-decoration: none
+    font-family: $coco
+    font-size: 22px
+    font-weight: 700
+    color: $white
+    text-transform: uppercase
+    line-height: 83px
+    text-align: center
+    opacity: .999
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    margin-top: 50px
+    z-index: 1
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7)
+    &:before
+      content: ""
+      width: 368px
+      height: 118px
+      background: url(../img/header_btn_bd.png) no-repeat
+      position: absolute
+      top: -16px
+      left: -21px
+      z-index: 1
+    &:hover
+      transition: .6s ease-in-out
+      &:before
+        display: none
+        transition: .6s ease-in-out

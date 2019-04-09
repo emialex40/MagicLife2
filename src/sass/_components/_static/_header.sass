@@ -1,0 +1,99 @@
+.header
+  width: 100%
+  background: url(../img/bg_header.png) no-repeat center center
+  position: relative
+  background-size: cover
+  &__content
+    width: 100%
+    margin-top: 80px
+  &__left
+    width: 42%
+  &__right
+    width: 56%
+  &__img
+    transform: translateY(-125px)
+  &__text
+    position: relative
+    h1
+      display: inline-block
+      font-family: $cocoExtra
+      font-size: 50px
+      font-weight: 400
+    span
+      display: inline-block
+      font-family: $coco
+      font-size: 25px
+      font-weight: 500
+      padding-top: 21px
+    &:after
+      content: ""
+      width: 326px
+      height: 272px
+      background: url(../img/header_arrow.png) no-repeat
+      position: absolute
+      right: -7px
+      top: 75px
+      z-index: 1
+  &__btn-block
+    width: 370px
+    height: 120px
+    margin-top: 137px
+    margin-left: -10px
+    position: relative
+    &:after
+      content: ""
+      width: 622px
+      height: 355px
+      position: absolute
+      top: -104px
+      left: -96px
+      background: url(../img/header_points.png) no-repeat
+      z-index: 0
+  &__btn
+    display: inline-block
+    width: 327px
+    height: 83px
+    background: url(../img/header_btn.png) no-repeat
+    text-decoration: none
+    font-family: $coco
+    font-size: 22px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 83px
+    text-align: center
+    opacity: .999
+    position: absolute
+    top: 17px
+    left: 21px
+    z-index: 1
+    &:before
+      content: ""
+      width: 368px
+      height: 118px
+      background: url(../img/header_btn_bd.png) no-repeat
+      position: absolute
+      top: -16px
+      left: -21px
+      z-index: 1
+    &:hover
+      transition: .6s ease-in-out
+      &:before
+        display: none
+        transition: .6s ease-in-out
+  .progress-bar
+    width: 100%
+    height: 2px
+    background: $white
+    opacity: .4
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+  .top-line
+    padding-top: 40px
+    width: 100%
+    .logo
+      display: block
+
+  .social-block
+    width: 155px

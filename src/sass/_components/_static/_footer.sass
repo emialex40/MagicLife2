@@ -5,6 +5,8 @@
   margin-top: -50px
   padding-top: 50px
   padding-bottom: 180px
+  +respond-to(480)
+    padding-bottom: 90px
   &__header
     padding-top: 65px
     font-family: $copiright
@@ -13,10 +15,48 @@
     color: $white
     text-align: center
     margin-bottom: 100px
+    +respond-to(480)
+      font-size: 31px
+      margin-bottom: 27px
+  &__mob-block
+    display: none
+    position: relative
+    width: 100%
+    +respond-to(992)
+      display: block
+    img
+      max-width: 539px
+      min-width: 290px
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
+  &__mob-txt
+    font-family: $coco
+    font-size: 30px
+    font-weight: 400
+    color: $white
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    +respond-to(480)
+      font-size: 20px
+    span
+      display: inline-block
+      width: 315px
+      +respond-to(480)
+        width: 201px
+  &__mob-txt1
+    top: 16%
+  &__mob-txt2
+    top: 45%
+  &__mob-txt3
+    bottom: 17%
   &__items
     width: 850px
     margin: 0 auto
     position: relative
+    +respond-to(992)
+      display: none
     &:after
       content: ""
       width: 308px
@@ -62,6 +102,8 @@
     position: relative
     left: 50%
     transform: translateX(-50%)
+    +respond-to(480)
+      margin-top: -6px
   &__btn
     display: inline-block
     width: 327px
@@ -81,6 +123,11 @@
     left: 21px
     z-index: 1
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7)
+    +respond-to(480)
+      background: url(../img/header_btn_mob.png) no-repeat
+      font-size: 20px
+      width: 264px
+      height: 82px
     &:before
       content: ""
       width: 368px
@@ -90,6 +137,10 @@
       top: -16px
       left: -21px
       z-index: 1
+      +respond-to(480)
+        background: url(../img/header_btn_bd_mob.png) no-repeat
+        top: 0
+        left: 0
     &:hover
       transition: .6s ease-in-out
       &:before

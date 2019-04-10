@@ -27,12 +27,73 @@
                 </span>
               </li>
             </ul>
+            <div class="footer__mob-block">
+              <img class="img-responsive" src="img/footer_stroke-mob.png"
+                   alt="Запустить игру и начать изменения просто">
+              <div class="footer__mob-txt footer__mob-txt1">
+                <span>
+                  Оставь заявку и получи<br>
+                  всю подробную<br>
+                  информацию.
+                </span>
+              </div>
+              <div class="footer__mob-txt footer__mob-txt2">
+                <span>
+                  Начни игру, проходи<br>
+                  уровни и зарабатывай<br>
+                  реальные деньги
+                </span>
+              </div>
+              <div class="footer__mob-txt footer__mob-txt3">
+                <span>
+                  Создай свой бизнес<br>
+                  и развивай его.
+                </span>
+              </div>
+            </div>
             <div class="footer__btn-block">
-              <a class="footer__btn" href="#" class="footer__btn js-btn">Начать игру</a>
+              <a class="footer__btn js-btn" href="#" c>Начать игру</a>
             </div>
           </div>
         </div>
       </footer>
+
+      <div class="modal-layout"></div>
+      <div class="modal" id="modal">
+        <div class="modal__body">
+          <div class="modal__close js-close"></div>
+          <div class="modal__form_block js-form">
+            <div class="modal__header"><span>Заявка на участие</span></div>
+            <form class="modal__form" id="form">
+              <div class="modal__box">
+                <input class="modal__input" type="text" name="name" placeholder="Ваше имя">
+              </div>
+              <div class="modal__box">
+                <input class="modal__input" type="tel" name="phone" placeholder="WhatsApp/Telegram" required>
+              </div>
+              <div class="modal__box">
+                <input class="modal__input" type="text" name="promo" placeholder="Промо-код (необязательно)">
+              </div>
+              <div class="modal__submit">
+                <button class="js-btn modal__btn" type="submit"
+                        onclick="yaCounter51270484.reachGoal('submitButton');
+                        return true;">
+                  Начать игру
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__tnx js-tnx" style="display: none;">
+            <div class="modal__text">
+              <div class="modal__text--top">
+                <h3>Спасибо!</h3><span>Ваша заявка принята!</span>
+              </div>
+              <div class="modal__text--bottom"><span>Мы свяжемся с Вами в ближайшее время!</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
 
     <script src="js/index.js"></script>

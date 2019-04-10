@@ -6,10 +6,25 @@
   padding-top: 95px
   padding-bottom: 50px
   box-sizing: border-box
+  +respond-to(680)
+    padding-top: 10px
+    padding-bottom: 80px
+  &__wrapper
+    width: 100%
+    +respond-to(992)
+      justify-content: space-around
   &__left
     width: 45%
+    min-width: 433px
+    +respond-to(680)
+      width: 100%
+      min-width: 290px
   &__right
     width: 50%
+    min-width: 480px
+    +respond-to(680)
+      width: 100%
+      min-width: 290px
   &__header
     width: 100%
     font-family: $copiright
@@ -20,6 +35,10 @@
     text-align: center
     position: relative
     margin-top: 100px
+    +respond-to(680)
+      margin-top: 50px
+    +respond-to(480)
+      font-size: 30px
     &:after
       content: ""
       width: 624px

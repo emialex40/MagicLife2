@@ -6,6 +6,11 @@
   padding-bottom: 150px
   box-sizing: border-box
   z-index: 4
+  &__wrapper
+    width: 100%
+    +respond-to(992)
+      flex-wrap: wrap-reverse
+      justify-content: space-around
   &__header
     display: block
     margin-top: 50px
@@ -13,41 +18,106 @@
     font-size: 48px
     font-weight: 400
     color: $white
+    +respond-to(992)
+      text-align: center
+    +respond-to(480)
+      font-size: 30px
   &__left
     width: 57%
+    min-width: 560px
+    +respond-to(992)
+      width: 100%
+      min-width: 290px
   &__right
     width: 35%
+    min-width: 340px
+    +respond-to(992)
+      width: 100%
+      min-width: 290px
   &__items
     width: 100%
     column-count: 2
     margin-top: 85px
+    +respond-to(728)
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+    +respond-to(720)
+      justify-content: center
+      column-count: 1
+    +respond-to(480)
+      display: none
+    &--mob
+      display: none
+      width: 100%
+      column-count: 1
+      margin-top: 55px
+      flex-wrap: wrap
+      //flex-direction: column
+      justify-content: space-around
+      +respond-to(480)
+        display: flex
   &__item
     width: 366px
     height: 150px
     background-repeat: no-repeat
-    display: flex
+    display: inline-block
     box-sizing: border-box
     font-family: $coco
     font-size: 19px
     font-weight: 600
     color: $grey
+    &--mob
+      width: 262px
+      height: 109px
+      background-repeat: no-repeat
+      display: inline-block
+      box-sizing: border-box
+      font-family: $coco
+      font-size: 14px
+      font-weight: 600
+      color: $grey
   &__item1
     background-image: url(../img/form_photo.png)
     background-position: -29px 0
     padding-top: 45px
     padding-left: 65px
+    &--mob
+      background-image: url(../img/form_photo_mob.png)
+      background-position: 0 0
+      padding-top: 40px
+      padding-left: 56px
   &__item2
     background-image: url(../img/form_phone.png)
     background-position: -29px 0
     padding-top: 63px
     padding-left: 65px
+    &--mob
+      background-image: url(../img/form_phone_mob.png)
+      background-position: 0 0
+      padding-top: 36px
+      padding-left: 56px
   &__item3
     background-image: url(../img/form_gun.png)
-    background-position: 13px 0
+    background-position: 0 0
     padding-top: 45px
     padding-left: 95px
+    &--mob
+      background-image: url(../img/form_gun_mob.png)
+      background-position: 0 0
+      padding-top: 29px
+      padding-left: 54px
+    +respond-to(720)
+      transform: translateX(-28px)
   &__item4
     background-image: url(../img/form_fist.png)
     background-position: 13px 0
     padding-top: 52px
     padding-left: 95px
+    &--mob
+      background-image: url(../img/form_fist_mob.png)
+      background-position: 0 0
+      padding-top: 28px
+      padding-left: 54px
+    +respond-to(720)
+      transform: translateX(-28px)

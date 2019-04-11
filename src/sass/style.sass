@@ -26,3 +26,22 @@
 /*======= plugins ===============*/
 @import "./libs/jquery.fancybox"
 
+.parallax-viewport
+  position: relative     /* relative, absolute, fixed */
+  overflow: hidden
+
+.parallax-layer
+  position: absolute
+  left: 0
+  top: 52px
+  +respond-to(992)
+    display: none
+
+.parallax-layer2
+  position: absolute
+  left: 0
+  bottom: 10px
+  z-index: 10
+  +respond-to(992)
+    display: none
+

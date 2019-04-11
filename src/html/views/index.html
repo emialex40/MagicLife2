@@ -5,16 +5,20 @@
 <%= _.template(require('./../includes/header.html').default)(data) %>
 <!-- section system beginning -->
 <section class="system">
-  <div class="container row just-between system__wrapper">
-    <div class="system__left">
-      <div class="system__img">
-        <img class="img-responsive" src="img/women1.png" alt="Система обучения Magic-Lige" class="img-responsive">
+  <div class="container">
+    <div class="parallax-viewport row just-between system__wrapper port">
+        <img class="parallax-layer" src="img/money1.png" alt="Деньги">
+      <div class="system__left">
+        <div class="system__img">
+          <img class="img-responsive img-desc" src="img/women1.png" alt="Система обучения Magic-Lige" class="img-responsive">
+          <img class="img-responsive img-mob" src="img/women1-mob.png" alt="Система обучения Magic-Lige" class="img-responsive">
+        </div>
       </div>
-    </div>
-    <div class="system__right">
-      <h3 class="system__header">Система обучения Magic Life</h3>
-      <div class="system__circle-block">
-        <img class="img-responsive" src="img/money_full.png" alt="Система обучения Magic Life">
+      <div class="system__right">
+        <h3 class="system__header">Система обучения Magic Life</h3>
+        <div class="system__circle-block">
+          <img class="img-responsive" src="img/money_full.png" alt="Система обучения Magic Life">
+        </div>
       </div>
     </div>
   </div>
@@ -26,10 +30,22 @@
     <div class="skills__left">
       <h3 class="skills__header">Пройди все уровни и прокачай навыки:</h3>
       <ul class="skills__items">
-        <li class="skills__item skills__item1">Создания вовлекающего<br> фото и видео контента</li>
-        <li class="skills__item skills__item2">Продвижения и рекламы<br> любого бизнеса</li>
-        <li class="skills__item skills__item3">Написания продающих<br> текстов</li>
-        <li class="skills__item skills__item4">Продвижения и рекламы<br> любого бизнеса</li>
+        <li class="skills__item skills__item1">
+          <img class="skills__img1" src="img/form_photo.png" alt="Создания вовлекающего фото и видео контента">
+          <span class="skills__txt1">Создания вовлекающего<br> фото и видео контента</span>
+        </li>
+        <li class="skills__item skills__item2">
+          <img class="skills__img2" src="img/form_phone.png" alt="Продвижения и рекламы любого бизнеса">
+          <span class="skills__txt1">Продвижения и рекламы<br> любого бизнеса</span>
+        </li>
+        <li class="skills__item skills__item3">
+          <img class="skills__img3" src="img/form_phone.png" alt="Написания продающих текстов">
+          <span class="skills__txt3">Написания продающих<br> текстов</span>
+        </li>
+        <li class="skills__item skills__item4">
+          <img class="skills__img4" src="img/form_phone.png" alt="Продвижения и рекламы любого бизнеса">
+          <span class="skills__txt4">Раскрутки личного<br> бренда</span>
+        </li>
       </ul>
       <ul class="skills__items--mob">
         <li class="skills__item--mob skills__item1--mob">Создания вовлекающего<br> фото и видео контента</li>
@@ -70,7 +86,8 @@
         <div class="clear"></div>
       </div>
       <div class="rules__btn-block">
-        <a class="rules__btn js-btn" href="#">Начать игру</a>
+        <a class="rules__btn js-btn" data-fancybox href="#">Начать игру</a>
+        <div class="highlight2"></div>
       </div>
     </div>
   </div>
@@ -79,53 +96,57 @@
 <!-- section get beginning -->
 <section class="get">
   <div class="container">
-    <div class="get__wrapper row just-between">
-      <div class="get__left">
-        <div class="get__img-block">
-          <img class="img-responsive" src="img/women2.png" alt="Что ты получишь играя в Magic Life?">
+    <div class="port">
+      <img class="parallax-layer2" src="img/money1.png" alt="Деньги">
+      <div class="get__wrapper row just-between">
+        <div class="get__left">
+          <div class="get__img-block">
+            <img class="img-responsive img-desc" src="img/women2.png" alt="Что ты получишь играя в Magic Life?">
+            <img class="img-responsive img-mob" src="img/women2-mob.png" alt="Что ты получишь играя в Magic Life?">
+          </div>
         </div>
-      </div>
-      <div class="get__right">
-        <h3 class="get__header">Что ты получишь играя в Magic Life?</h3>
-        <ul class="get__items">
-          <li class="get__item get__item1">
-            <h5 class="get__item-title">Бизнес</h5>
-            <span class="get__item-txt">Создавай бизнес на платформе<br>
+        <div class="get__right">
+          <h3 class="get__header">Что ты получишь играя в Magic Life?</h3>
+          <ul class="get__items">
+            <li class="get__item get__item1">
+              <h5 class="get__item-title">Бизнес</h5>
+              <span class="get__item-txt">Создавай бизнес на платформе<br>
               крупной международной компании,<br>
               без вложений и рисков</span>
-          </li>
-          <li class="get__item get__item2">
-            <h5 class="get__item-title">Помощь</h5>
-            <span class="get__item-txt">
+            </li>
+            <li class="get__item get__item2">
+              <h5 class="get__item-title">Помощь</h5>
+              <span class="get__item-txt">
               Команда Magic Life всегда<br>
               поддержит и поможет тебе на пути<br>
               развития бизнес-навыков.
             </span>
-          </li>
-          <li class="get__item get__item3">
-            <h5 class="get__item-title">Обучение</h5>
-            <span class="get__item-txt txt-desctop">
+            </li>
+            <li class="get__item get__item3">
+              <h5 class="get__item-title">Обучение</h5>
+              <span class="get__item-txt txt-desctop">
               Проходи онлайн обучение в таких<br>
               направлениях как: продвижение в<br>
               социальных сетях, копирайтинг,<br>
               создание увлекательного контента,<br>
               создание личного бренда.
             </span>
-            <span class="get__item-txt txt-mobile">
+              <span class="get__item-txt txt-mobile">
               Проходи онлайн обучение в<br>
               направлениях как: копирайтинг,<br>
               создание контента,
               создание бренда.
             </span>
-          </li>
-          <li class="get__item get__item4">
-            <h5 class="get__item-title">Свобода</h5>
-            <span class="get__item-txt">
+            </li>
+            <li class="get__item get__item4">
+              <h5 class="get__item-title">Свобода</h5>
+              <span class="get__item-txt">
               Путешествуй и зарабатывай из<br>
               любой точки мира.
             </span>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

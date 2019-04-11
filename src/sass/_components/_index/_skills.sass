@@ -1,5 +1,5 @@
 .skills
-  background: url(../img/bg3.png) no-repeat
+  background: url(../img/bg3.png) no-repeat center center
   background-size: cover
   margin-top: -50px
   padding-top: 100px
@@ -60,13 +60,14 @@
   &__item
     width: 366px
     height: 150px
-    background-repeat: no-repeat
+    //background-repeat: no-repeat
     display: inline-block
     box-sizing: border-box
     font-family: $coco
     font-size: 19px
     font-weight: 600
     color: $grey
+    position: relative
     &--mob
       width: 262px
       height: 109px
@@ -78,30 +79,30 @@
       font-weight: 600
       color: $grey
   &__item1
-    background-image: url(../img/form_photo.png)
-    background-position: -29px 0
-    padding-top: 45px
-    padding-left: 65px
+    //background-image: url(../img/form_photo.png)
+    //background-position: -29px 0
+    //padding-top: 45px
+    //padding-left: 65px
     &--mob
       background-image: url(../img/form_photo_mob.png)
       background-position: 0 0
       padding-top: 40px
       padding-left: 56px
   &__item2
-    background-image: url(../img/form_phone.png)
-    background-position: -29px 0
-    padding-top: 63px
-    padding-left: 65px
+    //background-image: url(../img/form_phone.png)
+    //background-position: -29px 0
+    //padding-top: 63px
+    //padding-left: 65px
     &--mob
       background-image: url(../img/form_phone_mob.png)
       background-position: 0 0
       padding-top: 36px
       padding-left: 56px
   &__item3
-    background-image: url(../img/form_gun.png)
-    background-position: 0 0
-    padding-top: 45px
-    padding-left: 95px
+    //background-image: url(../img/form_gun.png)
+    //background-position: 0 0
+    //padding-top: 45px
+    //padding-left: 95px
     &--mob
       background-image: url(../img/form_gun_mob.png)
       background-position: 0 0
@@ -110,10 +111,10 @@
     +respond-to(720)
       transform: translateX(-28px)
   &__item4
-    background-image: url(../img/form_fist.png)
-    background-position: 13px 0
-    padding-top: 52px
-    padding-left: 95px
+    //background-image: url(../img/form_fist.png)
+    //background-position: 13px 0
+    //padding-top: 52px
+    //padding-left: 95px
     &--mob
       background-image: url(../img/form_fist_mob.png)
       background-position: 0 0
@@ -121,3 +122,53 @@
       padding-left: 54px
     +respond-to(720)
       transform: translateX(-28px)
+  &__img1
+    position: absolute
+    top: -26px
+    left: -36px
+    z-index: 0
+  &__txt1
+    position: absolute
+    top: 48px
+    left: 67px
+    z-index: 1
+    object-fit: cover
+  &__img2
+    position: absolute
+    top: -27px
+    left: -36px
+    z-index: 0
+  &__txt2
+    position: absolute
+    object-fit: cover
+    top: 48px
+    left: 67px
+    z-index: 1
+  &__img3
+    position: absolute
+    top: -26px
+    left: -5px
+    z-index: 0
+  &__txt3
+    position: absolute
+    object-fit: cover
+    top: 48px
+    left: 95px
+    z-index: 1
+  &__img4
+    position: absolute
+    top: -27px
+    left: -5px
+    z-index: 0
+  &__txt4
+    position: absolute
+    object-fit: cover
+    top: 48px
+    left: 95px
+    z-index: 1
+  &__pers
+    img
+      max-width: 409px
+    +respond-to(992)
+      display: flex
+      justify-content: center

@@ -1,16 +1,23 @@
 .modal
   display: none
-  max-width: 590px
-  height: 574px
-  position: fixed
-  left: 50%
-  transform: translateX(-50%)
-  top: 40px
-  z-index: 10000
-  box-sizing: border-box
-  background: url(../img/modal_bg.jpg) no-repeat
-  background-size: cover
-  padding: 30px 120px
+  &__body
+    max-width: 590px
+    height: 574px
+    //position: fixed
+    //left: 50%
+    //transform: translateX(-50%)
+    top: 40px
+    //z-index: 10000
+    box-sizing: border-box
+    background: url(../img/modal_bg.jpg) no-repeat
+    background-size: cover
+    padding: 30px 120px
+    +respond-to(566)
+      padding: 30px 85px
+    +respond-to(480)
+      padding: 30px 20px
+    +respond-to(360)
+      padding: 30px 10px
   &__close
     width: 13px
     height: 13px
@@ -75,15 +82,6 @@
         display: none
         transition: .6s ease-in-out
 
-.modal-layout
-  display: none
-  width: 100vw
-  height: 100%
-  position: fixed
-  top: 0
-  left: 0
-  right: 0
-  background: $black
-  opacity: .7
-  z-index: 9999
+.fancybox-slide--html .fancybox-close-small
+  color: $white !important
 

@@ -140,10 +140,10 @@
         top: 0
         left: 0
     &:hover
-      transition: .6s ease-in-out
-      &:before
-        display: none
-        transition: .6s ease-in-out
+      &:after
+        box-shadow: 0 0 50px rgba(40,87,38,0.7)
+        transition: .5s
+
   .progress-container
     width: 100%
     height: 3px
@@ -184,8 +184,18 @@
 
   .social-block
     width: 155px
+    .soc-icon
+      width: 41px
+      height: 41px
+      border-radius: 50%
+      transition: .5s
+      &:hover
+        box-shadow: 0 0 10px rgba(255, 255, 255, .5)
+        transition: .5s
 
   .title-mob
     display: none
     +respond-to(1097)
       display: block
+
+

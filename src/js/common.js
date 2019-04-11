@@ -1,27 +1,46 @@
 jQuery(document).ready(function ($) {
 
+  //hover buttons
+  $('.js-btn').hover(function () {
+        $(this).next().fadeIn(500);
+      },
+      function () {
+        $(this).next().fadeOut(500);
+      });
+
+  //money parallax
+  $(window).resize(function() {
+    if($(window).width() > 992){
+      $('.port').mousemove(function(e) {
+        var change;
+        var xpos=e.clientX;var ypos=e.clientY;var left= change*20;
+        var  xpos=xpos*2;ypos=ypos*2;
+        $('.parallax-layer').css('top',((52+(ypos/50))+"px"));
+        $('.parallax-layer').css('left',(( 0+(xpos/80))+"px"));
+      });
+
+      $('.port').mousemove(function(e) {
+        var change;
+        var xpos=e.clientX;var ypos=e.clientY;var left= change*20;
+        var  xpos=xpos*2;ypos=ypos*2;
+        $('.parallax-layer2').css('bottom',((10+(ypos/50))+"px"));
+        $('.parallax-layer2').css('left',(( 0+(xpos/80))+"px"));
+      });
+    }
+  });
+
+  //progress bar
   $(window).scroll(function () {
     var ratio = $(document).scrollTop()/(($(document).height() - $(window).height()) / 100);
     $('.progress-line').width(ratio + '%');
   });
 
-  //open modal
-  var modal = $('#modal'),
-    layout = $('.modal-layout');
-
-  $('.js-btn').on('click', function (e) {
-    e.preventDefault();
-    layout.fadeIn(400);
-    modal.fadeIn(600);
-    $('body').css('overflow', 'hidden');
+  //modal
+  $('[data-fancybox]').fancybox({
+    src: '#modal',
+    closeTpl : '<div class="modal__close js-close"></div>'
   });
 
-  $('.js-close, .modal-layout').on('click', function (e) {
-    e.preventDefault();
-    layout.fadeOut(400);
-    modal.fadeOut(600);
-    $('body').css('overflow', 'auto');
-  });
 
   //send form
   $('#form').submit(function (e) {

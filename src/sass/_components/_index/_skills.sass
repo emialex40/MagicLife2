@@ -6,6 +6,10 @@
   padding-bottom: 150px
   box-sizing: border-box
   z-index: 4
+  +respond-to(992)
+    padding-bottom: 0
+  +respond-to(641)
+    padding-bottom: 160px
   &__wrapper
     width: 100%
     +respond-to(992)
@@ -38,29 +42,42 @@
     width: 100%
     column-count: 2
     margin-top: 85px
-    +respond-to(728)
+    +respond-to(600)
       display: flex
       flex-wrap: wrap
-      justify-content: space-around
-    +respond-to(720)
+      justify-content: space-between
+    +respond-to(600)
       justify-content: center
       column-count: 1
-    +respond-to(480)
+    +respond-to(720)
       display: none
+    &--tab
+      display: none
+      width: 100%
+      column-count: 2
+      margin-top: 55px
+      +respond-to(720)
+        display: block
+      +respond-to(641)
+        display: flex
+        column-count: 1
+        flex-direction: column
+        justify-content: center
+        align-items: center
+      +respond-to(340)
+        display: none
     &--mob
       display: none
       width: 100%
       column-count: 1
       margin-top: 55px
       flex-wrap: wrap
-      //flex-direction: column
       justify-content: space-around
-      +respond-to(480)
+      +respond-to(340)
         display: flex
   &__item
     width: 366px
     height: 150px
-    //background-repeat: no-repeat
     display: inline-block
     box-sizing: border-box
     font-family: $coco
@@ -68,6 +85,8 @@
     font-weight: 600
     color: $grey
     position: relative
+    +respond-to(600)
+      width: 320px
     &--mob
       width: 262px
       height: 109px
@@ -79,30 +98,28 @@
       font-weight: 600
       color: $grey
   &__item1
-    //background-image: url(../img/form_photo.png)
-    //background-position: -29px 0
-    //padding-top: 45px
-    //padding-left: 65px
     &--mob
-      background-image: url(../img/form_photo_mob.png)
+      background-image: url(../img/form_photo_tab.png)
       background-position: 0 0
       padding-top: 40px
       padding-left: 56px
+      +respond-to(600)
+        background-image: url(../img/form_photo_mob.png)
+        background-position: 0 0
+        padding-top: 40px
+        padding-left: 56px
   &__item2
-    //background-image: url(../img/form_phone.png)
-    //background-position: -29px 0
-    //padding-top: 63px
-    //padding-left: 65px
     &--mob
-      background-image: url(../img/form_phone_mob.png)
+      background-image: url(../img/form_phone_tab.png)
       background-position: 0 0
       padding-top: 36px
       padding-left: 56px
+      +respond-to(600)
+        background-image: url(../img/form_phone_mob.png)
+        background-position: 0 0
+        padding-top: 36px
+        padding-left: 56px
   &__item3
-    //background-image: url(../img/form_gun.png)
-    //background-position: 0 0
-    //padding-top: 45px
-    //padding-left: 95px
     &--mob
       background-image: url(../img/form_gun_mob.png)
       background-position: 0 0
@@ -111,10 +128,6 @@
     +respond-to(720)
       transform: translateX(-28px)
   &__item4
-    //background-image: url(../img/form_fist.png)
-    //background-position: 13px 0
-    //padding-top: 52px
-    //padding-left: 95px
     &--mob
       background-image: url(../img/form_fist_mob.png)
       background-position: 0 0
@@ -127,6 +140,10 @@
     top: -26px
     left: -36px
     z-index: 0
+    +respond-to(720)
+      left: -18px
+    +respond-to(641)
+      left: -17px
   &__txt1
     position: absolute
     top: 48px
@@ -138,17 +155,27 @@
     top: -27px
     left: -36px
     z-index: 0
+    +respond-to(720)
+      left: -13px
+    +respond-to(641)
+      left: -12px
   &__txt2
     position: absolute
     object-fit: cover
     top: 48px
     left: 67px
     z-index: 1
+    +respond-to(720)
+      top: 44px
   &__img3
     position: absolute
     top: -26px
     left: -5px
     z-index: 0
+    +respond-to(720)
+      top: -19px
+    +respond-to(641)
+      left: -8px
   &__txt3
     position: absolute
     object-fit: cover
@@ -160,15 +187,24 @@
     top: -27px
     left: -5px
     z-index: 0
+    +respond-to(720)
+      top: -11px
+    +respond-to(641)
+      left: -8px
   &__txt4
     position: absolute
     object-fit: cover
     top: 48px
     left: 95px
     z-index: 1
+    +respond-to(720)
+      top: 43px
   &__pers
+    width: 100%
     img
       max-width: 409px
-    +respond-to(992)
-      display: flex
-      justify-content: center
+      min-width: 290px
+      +respond-to(992)
+        position: relative
+        left: 50%
+        transform: translateX(-50%)

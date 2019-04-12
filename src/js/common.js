@@ -9,25 +9,30 @@ jQuery(document).ready(function ($) {
       });
 
   //money parallax
-  $(window).resize(function() {
-    if($(window).width() > 992){
-      $('.port').mousemove(function(e) {
-        var change;
-        var xpos=e.clientX;var ypos=e.clientY;var left= change*20;
-        var  xpos=xpos*2;ypos=ypos*2;
-        $('.parallax-layer').css('top',((52+(ypos/50))+"px"));
-        $('.parallax-layer').css('left',(( 0+(xpos/80))+"px"));
-      });
 
-      $('.port').mousemove(function(e) {
-        var change;
-        var xpos=e.clientX;var ypos=e.clientY;var left= change*20;
-        var  xpos=xpos*2;ypos=ypos*2;
-        $('.parallax-layer2').css('bottom',((10+(ypos/50))+"px"));
-        $('.parallax-layer2').css('left',(( 0+(xpos/80))+"px"));
-      });
-    }
-  });
+  if($(window).width() > 992) {
+    $('.port').mousemove(function (e) {
+      var change;
+      var xpos = e.clientX;
+      var ypos = e.clientY;
+      var left = change * 20;
+      var xpos = xpos * 2;
+      ypos = ypos * 2;
+      $('.parallax-layer').css('top', ((52 + (ypos / 50)) + "px"));
+      $('.parallax-layer').css('left', ((0 + (xpos / 80)) + "px"));
+    });
+
+    $('.port').mousemove(function (e) {
+      var change;
+      var xpos = e.clientX;
+      var ypos = e.clientY;
+      var left = change * 20;
+      var xpos = xpos * 2;
+      ypos = ypos * 2;
+      $('.parallax-layer2').css('bottom', ((-25 + (ypos / 50)) + "px"));
+      $('.parallax-layer2').css('left', ((-37 + (xpos / 80)) + "px"));
+    });
+  }
 
   //progress bar
   $(window).scroll(function () {

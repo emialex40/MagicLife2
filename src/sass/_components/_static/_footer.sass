@@ -1,10 +1,15 @@
 .footer
-  background: url(../img/bg_footer.jpg) no-repeat center bottom
-  background-size: cover
+  background-color: #09080c
   z-index: 1
   margin-top: -50px
   padding-top: 50px
   padding-bottom: 180px
+  overflow: hidden
+  position: relative
+  +respond-to(720)
+    background-repeat: no-repeat
+    background-position: center bottom
+    padding-bottom: 98px
   +respond-to(480)
     padding-bottom: 90px
   &__header
@@ -22,39 +27,39 @@
     display: none
     position: relative
     width: 100%
+    z-index: 1
     +respond-to(992)
       display: block
     img
-      max-width: 539px
+      width: 100%
       min-width: 290px
       position: relative
       left: 50%
       transform: translateX(-50%)
   &__mob-txt
     font-family: $coco
-    font-size: 30px
+    font-size: 25px
     font-weight: 400
     color: $white
     position: absolute
     left: 50%
     transform: translateX(-50%)
-    +respond-to(480)
-      font-size: 20px
+    +respond-to(600)
+      font-size: 3.5vw
     span
       display: inline-block
-      width: 315px
-      +respond-to(480)
-        width: 201px
+      width: max-content
   &__mob-txt1
     top: 16%
   &__mob-txt2
     top: 45%
   &__mob-txt3
-    bottom: 17%
+    bottom: 25%
   &__items
     width: 880px
     margin: 0 auto
     position: relative
+    z-index: 1
     +respond-to(992)
       display: none
     &:after
@@ -89,6 +94,7 @@
       position: absolute
       bottom: -67px
       left: -60px
+      z-index: 0
     img
       display: block
     span
@@ -99,11 +105,14 @@
       display: block
       padding-top: 13px
   &__btn-block
-    margin-top: 108px
     display: inline-block
     position: relative
     left: 50%
     transform: translateX(-50%)
+    z-index: 1
+    margin-top: 108px
+    +respond-to(720)
+      margin-top: 0
     +respond-to(480)
       margin-top: -6px
   &__btn
@@ -139,7 +148,40 @@
       top: -16px
       left: -21px
       z-index: 1
+      object-fit: cover
       +respond-to(480)
         background: url(../img/header_btn_bd_mob.png) no-repeat
         top: 0
         left: 0
+.smoke
+  display: none
+  width: 100%
+  height: 100%
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 1
+  +respond-to(720)
+    display: block
+
+.smoke_desc
+  width: 100%
+  height: 100%
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 1
+  +respond-to(720)
+    display: none
+
+.footer_point
+  //display: none
+  position: absolute
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%)
+  z-index: 0
+  +respond-to(720)
+    bottom: -28px

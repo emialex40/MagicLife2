@@ -8,6 +8,8 @@
   z-index: 2
   &__wrapper
     margin-top: 130px
+    +respond-to(1112)
+      justify-content: space-around
   &__left
     width: 35%
     min-width: 405px
@@ -18,8 +20,7 @@
       justify-content: center
   &__right
     width: 62%
-    min-width: 572px
-    +respond-to(992)
+    +respond-to(1112)
       width: 100%
       min-width: 290px
   &__header
@@ -27,7 +28,7 @@
     font-size: 48px
     font-weight: 400
     color: $darkBlue2
-    +respond-to(992)
+    +respond-to(1112)
       text-align: center
     +respond-to(480)
       font-size: 31px
@@ -36,6 +37,7 @@
       min-width: 338px
       position: relative
       left: 20px
+      z-index: 0
       +respond-to(992)
         min-width: 290px
         left: 50%
@@ -44,63 +46,51 @@
     column-count: 2
     margin-top: 75px
     opacity: .999
-    +respond-to(1122)
-      column-count: 1
-      display: flex
-      flex-wrap: wrap
-      justify-content: center
-      align-items: center
-      min-width: 600px
-    +respond-to(600)
-      min-width: 290px
+    +respond-to(1112)
+      display: none
+    &--mob
+      display: none
+      margin-top: 80px
+      +respond-to(1112)
+        display: block
   &__item
-    width: 345px
+    width: 100%
     height: 238px
-    padding-top: 37px
-    padding-left: 42px
     box-sizing: border-box
-    +respond-to(1122)
-      width: 575px
-    +respond-to(600)
-      width: 300px
-      height: 165px
-      padding-top: 14px
-      padding-left: 20px
-  &__item1
-    background: url(../img/get_text1.png) no-repeat
-    +respond-to(1122)
-      background: url(../img/get_text1-tab.png) no-repeat
-    +respond-to(600)
-      background: url(../img/get_text1-mob.png) no-repeat
-  &__item2
-    background: url(../img/get_text3.png) no-repeat
-    +respond-to(1122)
-      background: url(../img/get_text2-tab.png) no-repeat
-    +respond-to(600)
-      background: url(../img/get_text2-mob.png) no-repeat
-  &__item3
-    background: url(../img/get_text2.png) no-repeat
-    +respond-to(1122)
-      background: url(../img/get_text3-tab.png) no-repeat
-    +respond-to(600)
-      background: url(../img/get_text3-mob.png) no-repeat
-    span
-      margin-top: 11px
-      +respond-to(600)
-        margin-top: 4px
-  &__item4
-    background: url(../img/get_text4.png) no-repeat
-    +respond-to(1122)
-      background: url(../img/get_text4-tab.png) no-repeat
-    +respond-to(600)
-      background: url(../img/get_text4-mob.png) no-repeat
+    position: relative
+    +respond-to(1112)
+      max-width: 570px
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
+      margin-bottom: 60px
+    +respond-to(480)
+      height: 170px
+    +respond-to(380)
+      height: 130px
+  &__img
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    +respond-to(1112)
+      max-width: 569px
+      width: 100%
+  &__text
+    position: absolute
+    top: 29px
+    left: 45px
+    +respond-to(480)
+      top: 20px
   &__item-title
     font-family: $coco
     font-size: 25px
     font-weight: 900
     color: $darkBlue2
     +respond-to(600)
-      font-size: 18px
+      font-size: 4vw
+    +respond-to(436)
+      font-size: 3.7vw
   &__item-txt
     display: inline-block
     font-family: $coco
@@ -108,17 +98,26 @@
     font-weight: 400
     color: $greyBlue
     margin-top: 25px
+    +respond-to(1112)
+      font-size: 22px
+      margin-top: 8px
     +respond-to(600)
       margin-top: 4px
-      font-size: 14px
-
-.txt-desctop
-  +respond-to(600)
+      font-size: 3.6vw
+    +respond-to(436)
+      font-size: 3.2vw
+  &__plane:before
     display: none
-.txt-mobile
-  display: none
-  +respond-to(600)
-    display: inline-block
+    content: ""
+    width: 169px
+    height: 111px
+    background: url(../img/plane.png) no-repeat
+    position: absolute
+    top: -75px
+    left: -12px
+    z-index: 2
+    +respond-to(1112)
+      display: block
 
 
 

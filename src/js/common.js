@@ -40,7 +40,7 @@ jQuery(document).ready(function ($) {
     $('.progress-line').width(ratio + '%');
   });
 
-  //modal
+  // modal
   $('[data-fancybox]').fancybox({
     src: '#modal',
     closeTpl : '<div class="modal__close js-close"></div>'

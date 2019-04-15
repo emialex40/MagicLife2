@@ -1,5 +1,6 @@
 .modal
-  display: none
+  //display: none
+  position: relative
   &__body
     max-width: 590px
     height: 574px
@@ -45,12 +46,13 @@
     background: $lightBlack2
     border: 2px solid $lightBlack1
     margin-bottom: 18px
-    font-family: $coco
+    font-family: $copiright
     font-size: 19px
     color: $white
     box-sizing: border-box
     padding-left: 15px
     &::placeholder
+      font-family: $coco
       color: $white
       text-align: center
   &__btn
@@ -67,6 +69,13 @@
     cursor: pointer
     position: relative
     margin-top: 40px
+    z-index: 1
+    opacity: .999
+    transform: scale(.8, .8)
+    +respond-to(480)
+      left: 50%
+      transform: translateX(-50%) scale(.8, .8)
+      font-size: 16px
     &:before
       content: ""
       width: 368px
@@ -75,12 +84,41 @@
       position: absolute
       top: 0
       left: 0
-      z-index: 1
+      z-index: 0
+      transition: .6s ease-in-out
     &:hover
       transition: .6s ease-in-out
       &:before
         display: none
         transition: .6s ease-in-out
+  &__tnx
+    padding: 0 50px
+  &__text
+    width: 100%
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+  &__text--top
+    display: block
+    width: 100%
+    font-family: $copiright
+    color: $white
+    text-align: center
+    h3
+      font-size: 48px
+      text-transform: uppercase
+      display: block
+    span
+      font-size: 36px
+      display: block
+  &__text--bottom
+    display: block
+    font-family: $coco
+    font-size: 24px
+    color: $white
+    text-align: center
+    margin-top: 50px
 
 .fancybox-slide--html .fancybox-close-small
   color: $white !important
